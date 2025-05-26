@@ -21,3 +21,11 @@
 - Under Developing
   - my_rank command: Can make a picture now, but the font size and the layout is not good, need adjustment.
   - exp_system: created table in the db, but no any functions created yet, and the rank card won't receive anything.
+
+### 2025 05 26
+
+- 0.0.3
+  - Rank Card Styling is done. /rank my_rank
+  - Added Custom Settings with color. (RGB) /rank set_card_color
+  - User Exp System is done. With on_message add exp(1 to 5) with 1 min CD.
+  - Users now can get check the rank via commands.
