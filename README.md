@@ -10,7 +10,7 @@
 
 ### Commands start with slash / symbol
 
-- Currently under development
+- /rank my_rank & set_card_color can now be used in certain channels.
 
 ### Tag reactions
 
@@ -18,4 +18,4 @@
 
 ### Auto trigger
 
-- If gumi or fox stays up and send message in a certain time, the system will automatically warm them.
+- If gumi or fox stays up and send message in a certain time, the system will automatically warn them.
