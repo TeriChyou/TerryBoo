@@ -99,7 +99,7 @@ async def generate_rank_card(
     if 16 > len(user_display_name) > 8: # user name len judge
         fontSize = font_medium
         username_y = username_y + 5
-    else:
+    elif len(user_display_name) >= 16:
         fontSize = font_small
         username_y = username_y + 10
     draw.text((username_x, username_y), user_display_name, fill=text_color, font=fontSize)

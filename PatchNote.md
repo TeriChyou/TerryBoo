@@ -29,3 +29,9 @@
   - Added Custom Settings with color. (RGB) /rank set_card_color
   - User Exp System is done. With on_message add exp(1 to 5) with 1 min CD.
   - Users now can get check the rank via commands.
+
+### 2025 05 27
+
+- 0.0.3b
+  - Rank Card name font size adjustment. (<8 or >32 will be small) now change to <8 is large and >32 is small
+  - The lvling up announcement will now represent in #command-spamming channel.

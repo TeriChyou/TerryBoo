@@ -51,7 +51,7 @@ class ExpSystem:
         user_nickName = userData["user_nickName"]
         lvlUp = False
         res = [0, 0, 0]
-        if lvlData[1] + expAmt > lvlData[2]:
+        if lvlData[1] + expAmt >= lvlData[2]:
             res[0] = lvlData[0] + 1
             res[1] = lvlData[1] + expAmt - lvlData[2]
             res[2] = expToLevel(res[0], lvlData[2])
@@ -120,13 +120,13 @@ class ExpSystem:
 # Local Functions
 def expToLevel(lvl, curr)-> int:
     if lvl <= 9:
-        return int(curr ^ 1.1)
+        return int(curr ** 1.1)
     elif lvl <= 30:
-        return int(curr ^ 1.08)
+        return int(curr ** 1.08)
     elif lvl <= 70:
-        return int(curr ^ 1.05)
+        return int(curr ** 1.05)
     elif lvl <= 120:
-        return int(curr ^ 1.02)
+        return int(curr ** 1.02)
     elif lvl <= 200:
-        return int(curr ^ 1.01)
+        return int(curr ** 1.01)
     
