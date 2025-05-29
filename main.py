@@ -115,7 +115,7 @@ async def on_message(message):
         now = datetime.now().time()
         # 狐仙以外的
         if(user["user_name"] != "fairyfoxxx_704"):
-            if time(0, 0) <= now <= time(7, 0):
+            if time(0, 0) <= now <= time(5, 0):
                 lastUpdate = gs.get_last_update(user['user_name'])[0]
                 # Check last update
                 if(datetime.now().date() > datetime.strptime(lastUpdate, '%Y-%m-%d').date()):
@@ -125,7 +125,7 @@ async def on_message(message):
                     return
         # 狐仙
         else:
-            if time(12, 0) <= now <= time(19, 0):
+            if time(12, 0) <= now <= time(17, 0):
                 lastUpdate = gs.get_last_update(user['user_name'])[0]
                 # Check last update
                 if(datetime.now().date() > datetime.strptime(lastUpdate, '%Y-%m-%d').date()):
